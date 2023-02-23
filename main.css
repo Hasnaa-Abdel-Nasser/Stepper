@@ -1,0 +1,61 @@
+*{
+    padding:0;
+    margin:0;
+}
+.data{
+    width: 100%; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 400px;
+}
+.stepper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 5%;
+}
+.space,.space-checked{
+    background-color: rgb(98, 134, 235);
+    width: 0%;
+    height: 3px;
+    transition: 1s ease-in-out;
+}
+.number{
+    padding: 5px 10px;
+    border-radius: 50%;
+    color: rgb(214, 214, 214);
+    border: 3px solid rgb(234, 234, 234);
+}
+.buttons{
+    text-align: center;
+}
+button{
+    padding: 8px 25px;
+    margin-left: 10px;
+    background-color: rgb(234, 234, 234);
+    border: none;
+    font-weight: bold;
+    color: white;
+    border-radius: 3px;
+}
+.space-checked{
+    width:25%;
+    background-color:rgb(234, 234, 234);
+}
+#next{
+    background-color: rgb(98, 134, 235);
+    cursor: pointer;
+}
+#prev{
+    background-color: rgb(234, 234, 234);
+    cursor: not-allowed;
+
+}
+.number:nth-child(1){
+    border: 3px solid rgb(98, 134, 235);
+}
